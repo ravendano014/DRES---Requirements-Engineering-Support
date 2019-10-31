@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grid name="req" title="Subfolders" width="100%" rowbinding="/*/folder">
+	<column name="folder_prefix" title="Prefix" binding="@prefix" sorter="simple"/>
+	<column name="folder_name" title="Name" binding="@name" sorter="simple">
+		<link page="main.php" transfer="false" row="true">
+			<output name="page" value="folder"/>
+			<output name="folder" select="@id"/>
+		</link>
+	</column>
+	<pager style="simple" rowsperpage="30"/>
+	<insert title="Add Subfolder" page="main.php" transfer="true">
+		<output name="page" value="folder"/>
+	</insert>
+	<norows>
+		No subfolders
+	</norows>
+</grid>

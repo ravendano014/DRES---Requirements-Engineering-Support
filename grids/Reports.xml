@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grid name="reports" title="Saved Reports" width="100%" sort="report_date" order="descending" rowbinding="//report">
+	<column name="report_name" title="Name" binding="@name" sorter="simple">
+		<link page="main.php" transfer="false">
+			<output name="page" value="report"/>
+			<output name="report_id" select="@id"/>
+		</link>
+	</column>
+	<column name="report_date" title="Date" binding="@date" align="right" width="200" sorter="simple"/>
+	<column name="report_view" title="" binding="'view report'" align="center">
+		<link page="report.php" transfer="false" target="_blank">
+			<output name="report_id" select="@id"/>
+		</link>
+	</column>
+	<pager style="simple" rowsperpage="25"/>
+	<insert title="Create report" page="main.php" transfer="false">
+		<output name="page" value="report"/>
+	</insert>
+	<norows>
+		No reports saved
+	</norows>
+</grid>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grid name="search" title="Search Results" width="100%" sort="req_name" order="ascending" rowbinding="//requirement">
+	<column name="req_folder" title="Folder" binding="../@name" sorter="simple">
+		<link page="main.php" transfer="false">
+			<output name="page" value="folder"/>
+			<output name="folder" select="../@id"/>
+		</link>
+	</column>
+	<column name="req_identifier" title="Identifier" binding="@identifier" align="left" sorter="simple"/>
+	<column name="req_name" title="Name" binding="@name" sorter="simple">
+		<link page="main.php" transfer="false">
+			<output name="page" value="requirement"/>
+			<output name="req_id" select="@id"/>
+		</link>
+	</column>
+	<column name="req_revision" title="Revision" binding="@version" align="center" width="100" sorter="simple"/>
+	<column name="req_date" title="Date" binding="@date" align="right" width="200" sorter="simple"/>
+	<pager style="simple" rowsperpage="25"/>
+	<norows>
+		No requirements found
+	</norows>
+	<insert title="Save this as a report" page="main.php" transfer="true">
+		<output name="page" value="report"/>
+	</insert>
+</grid>

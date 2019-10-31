@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grid name="revisions" title="Requirement Revisions" width="100%" sort="revision" order="descending" rowid="@id" rowbinding="//revision">
+	<column name="revision" title="Revision" binding="@version" align="center" sorter="simple" type="number">
+		<link page="main.php" transfer="true">
+			<output name="req_id" select="@id"/>
+		</link>
+	</column>
+	<column name="date" title="Date" binding="@date" sorter="simple"/>
+	<column name="label" title="Label" binding="@label" sorter="simple"/>
+	<column name="author" title="Author" binding="author" sorter="simple"/>
+	<column name="comment" title="Comment" binding="comment" sorter="simple"/>
+	<pager style="simple" rowsperpage="10"/>
+</grid>

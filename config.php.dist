@@ -1,0 +1,56 @@
+<?php
+#############################################################################
+## config.php - xDRE configuration file                                    ##
+## author: Krzysztof Kowalczykiewicz                                       ##
+#############################################################################
+
+// application version
+define("VERSION", "0.71");
+
+// temporary directory to save uncommited data
+//define("TEMP_DIR", "c:/temp");
+define("TEMP_DIR", "/tmp");
+
+// datasource type: mysql or xmlrpc
+//define("DATASOURCE", "xmlrpc");
+define("DATASOURCE", "mysql");
+
+// host and port to connect to RM XMLRPC service
+define("RM_XMLRPC_HOST", "localhost");
+define("RM_XMLRPC_PORT", "8989");
+
+// mysql database connection settings
+define("MYSQL_HOST", "localhost");
+define("MYSQL_USER", "dresuser");
+define("MYSQL_PASSWORD", "drespasswd");
+define("MYSQL_DATABASE", "dres");
+
+// XSLT processing mode:
+//	"internal" for using internal PHP XSLT module (recommended on windows)
+//	"command" for using external Sablotron binary sabcmd (recommended on linux)
+//define("XSLT_MODE", "internal");
+define("XSLT_MODE", "command");
+
+// path to the sabcmd binary if command mode set
+define("SABCMD_PATH", "/usr/local/bin/sabcmd");
+
+// whether to display user login field as combo
+define("DISPLAY_USERS_COMBO", true);
+
+// whether to display project selection field as combo
+define("DISPLAY_PROJECTS_COMBO", true);
+
+// whether to display registration link on login page
+define("DISPLAY_REGISTRATION", true);
+
+// whether to display project selection field as combo
+define("DEFAULT_PROJECT", false);
+
+// XMLDOM version to use
+define("XMLDOM_VERSION", "");
+
+// cookie names
+define("SESSION_COOKIE", "DRESSession");
+define("USER_COOKIE", "DRESUser");
+define("PROJECT_COOKIE", "DRESProject");
+?>
