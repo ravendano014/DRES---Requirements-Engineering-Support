@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>DRES Administration</title>
+<link rel="stylesheet" type="text/css" href="Themes/InLine/Style.css">
+</head>
+<body bgcolor="#F4F8FB" link="#000000" alink="#000000" vlink="#000000" text="#000000" class="InLinePageBODY" topmargin="0" marginwidth="0" leftmargin="0" rightmargin="0" marginheight="0">
+<table width="100%">
+  <tr bgcolor="#D4E1EC">
+    <td colspan="2"><a href="./"><font style=" text-decoration:none;color: #000000; font-family: Verdana, Tahoma, Arial, Helvetica"><span style="font-size:40px; color:#355471"><b>DRES
+      administration<b></span></font></a><br>
+      <font style=" color: #000000; font-family: Arial, Tahoma, Verdana, Helvetica"><span style="font-size:10px; color:#355471"><b>D</b>istributed <b>R</b>equirements <b>E</b>ngineering <b>S</b>ystem
+      v0.5</span></font></td></td>
+</tr>
+</table>
+<!-- BEGIN Record Login -->
+<form name="{HTMLFormName}" action="{Action}" method="post">
+  <font class="InLineFormHeaderFont">Login</font> 
+  <table class="InLineFormTABLE" cellspacing="0" cellpadding="3">
+    <!-- BEGIN Error -->
+    <tr>
+      <td class="InLineErrorDataTD" colspan="2">{Error}</td> 
+    </tr>
+    <!-- END Error -->
+    <tr>
+      <td class="InLineFieldCaptionTD">Login&nbsp;</td> 
+      <td class="InLineDataTD"><input class="InLineInput" maxlength="100" value="{login}" name="{login_Name}">&nbsp;</td> 
+    </tr>
+ 
+    <tr>
+      <td class="InLineFieldCaptionTD">Password&nbsp;</td> 
+      <td class="InLineDataTD"><input class="InLineInput" type="password" maxlength="100" value="{password}" name="{password_Name}">&nbsp;</td> 
+    </tr>
+ 
+    <tr>
+      <td class="InLineFooterTD" nowrap align="right" colspan="2">
+        <!-- BEGIN Button Button_DoLogin --><input class="InLineButton" type="submit" value="Login" name="{Button_Name}"><!-- END Button Button_DoLogin -->&nbsp; </td> 
+    </tr>
+ 
+  </table>
+</form>
+<!-- END Record Login -->
+</body>
+</html>

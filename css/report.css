@@ -1,0 +1,54 @@
+BODY, P, TD {
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 9pt
+}
+H1 {
+	font-size: 25pt
+}
+H2 {
+	font-size: 20pt
+}
+H3 {
+	font-size: 18pt
+}
+H4 {
+	font-size: 13pt;
+	border-top: 1px solid gray
+}
+H5 {
+	font-size: 11pt
+}
+H6 {
+	font-size: 9pt;
+}
+.AttrTable {
+}
+.AttrLabelCell {
+	width: 100px
+}
+.AttrValueCell {
+}
+.AttrLabel {
+	font-weight: bold;
+	color: #800000
+}
+.AttrValue {
+	font-style: italic
+}
+.Folder {
+	border-top: 2px solid green;
+	border-left: 1px solid green;
+	padding: 3px 3px 3px 3px
+}
+.Requirement {
+	border: 1px solid gray;
+	padding: 3px 3px 3px 3px
+}
+HR {
+	color: #800000
+}
+.Footer {
+	font-size: 7pt;
+	color:#A0A0A0;
+	text-align:center
+}

@@ -1,0 +1,103 @@
+<html>
+<head>
+<title>DRES Administration</title>
+<link rel="stylesheet" type="text/css" href="Themes/InLine/Style.css">
+</head>
+<body bgcolor="#F4F8FB" link="#000000" alink="#000000" vlink="#000000" text="#000000" class="InLinePageBODY" topmargin="0" marginwidth="0" leftmargin="0" rightmargin="0" marginheight="0">
+{Header}
+<!-- BEGIN Record usersSearch -->
+<form method="post" action="{Action}" name="{HTMLFormName}">
+  <font class="InLineFormHeaderFont">Search Users </font> 
+  <table cellpadding="3" cellspacing="0" class="InLineFormTABLE">
+    <!-- BEGIN Error -->
+    <tr>
+      <td colspan="6" class="InLineErrorDataTD">{Error}</td> 
+    </tr>
+    <!-- END Error -->
+    <tr>
+      <td class="InLineFieldCaptionTD">Name&nbsp;</td> 
+      <td class="InLineDataTD"><input name="{s_name_Name}" value="{s_name}" maxlength="100" size="50" class="InLineInput">&nbsp;</td> 
+      <td class="InLineFieldCaptionTD">Level&nbsp;</td> 
+      <td class="InLineDataTD">
+        <select name="{s_user_level_Name}" class="InLineSelect">
+          <option value="" selected>Select Value</option>
+ {s_user_level_Options} 
+        </select>
+ &nbsp; </td> 
+      <td nowrap class="InLineFooterTD"><a class="InLineDataLink" href="{ClearParameters_Src}">Clear</a>&nbsp; </td> 
+      <td align="right" nowrap class="InLineFooterTD">
+        <!-- BEGIN Button Button_DoSearch --><input name="{Button_Name}" type="submit" value="Search" class="InLineButton"><!-- END Button Button_DoSearch -->&nbsp; </td> 
+    </tr>
+ 
+  </table>
+</form>
+<!-- END Record usersSearch -->
+<!-- BEGIN Grid users --><font class="InLineFormHeaderFont">List of Users </font><br>
+Total Users:&nbsp; {users_TotalRecords}&nbsp;
+<table cellpadding="3" cellspacing="0" class="InLineFormTABLE" width="100%">
+  <tr>
+    <td nowrap class="InLineColumnTD">
+      <!-- BEGIN Sorter Sorter_user_name --><a class="InLineSorterLink" href="{Sort_URL}">Name</a> 
+      <!-- BEGIN Asc_On --><img src="Themes/InLine/AscOn.gif" border="0"><!-- END Asc_On -->
+      <!-- BEGIN Desc_On --><img src="Themes/InLine/DescOn.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_user_name -->&nbsp;</td> 
+    <td nowrap class="InLineColumnTD">
+      <!-- BEGIN Sorter Sorter_user_login --><a class="InLineSorterLink" href="{Sort_URL}">Login</a> 
+      <!-- BEGIN Asc_On --><img src="Themes/InLine/AscOn.gif" border="0"><!-- END Asc_On -->
+      <!-- BEGIN Desc_On --><img src="Themes/InLine/DescOn.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_user_login -->&nbsp;</td> 
+    <td nowrap class="InLineColumnTD">
+      <!-- BEGIN Sorter Sorter_user_level --><a class="InLineSorterLink" href="{Sort_URL}">Level</a> 
+      <!-- BEGIN Asc_On --><img src="Themes/InLine/AscOn.gif" border="0"><!-- END Asc_On -->
+      <!-- BEGIN Desc_On --><img src="Themes/InLine/DescOn.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_user_level -->&nbsp;</td> 
+    <td nowrap class="InLineColumnTD">
+      <!-- BEGIN Sorter Sorter_user_date_registered --><a class="InLineSorterLink" href="{Sort_URL}">Date_registered</a> 
+      <!-- BEGIN Asc_On --><img src="Themes/InLine/AscOn.gif" border="0"><!-- END Asc_On -->
+      <!-- BEGIN Desc_On --><img src="Themes/InLine/DescOn.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_user_date_registered -->&nbsp;</td> 
+    <td nowrap class="InLineColumnTD">
+      <!-- BEGIN Sorter Sorter_user_date_logged --><a class="InLineSorterLink" href="{Sort_URL}">Date_logged</a> 
+      <!-- BEGIN Asc_On --><img src="Themes/InLine/AscOn.gif" border="0"><!-- END Asc_On -->
+      <!-- BEGIN Desc_On --><img src="Themes/InLine/DescOn.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_user_date_logged -->&nbsp;</td> 
+  </tr>
+  <!-- BEGIN Row -->
+  <tr>
+    <td class="InLineDataTD"><a class="InLineDataLink" href="{user_name_Src}">{user_name}</a>&nbsp;</td> 
+    <td class="InLineDataTD">{user_login}&nbsp;</td> 
+    <td class="InLineDataTD">{user_level}&nbsp;</td> 
+    <td class="InLineDataTD" nowrap>{user_date_registered}&nbsp;</td> 
+    <td class="InLineDataTD" nowrap>{user_date_logged}&nbsp;</td> 
+  </tr>
+  <!-- END Row -->
+  <!-- BEGIN AltRow -->
+  <tr>
+    <td class="InLineAltDataTD"><a class="InLineDataLink" href="{Alt_user_name_Src}">{Alt_user_name}</a>&nbsp;</td> 
+    <td class="InLineAltDataTD">{Alt_user_login}&nbsp;</td> 
+    <td class="InLineAltDataTD">{Alt_user_level}&nbsp;</td> 
+    <td class="InLineAltDataTD" nowrap>{Alt_user_date_registered}&nbsp;</td> 
+    <td class="InLineAltDataTD" nowrap>{Alt_user_date_logged}&nbsp;</td> 
+  </tr>
+  <!-- END AltRow -->
+  <!-- BEGIN NoRecords -->
+  <tr>
+    <td colspan="5" class="InLineAltDataTD">No user accounts&nbsp;</td> 
+  </tr>
+  <!-- END NoRecords -->
+  <tr>
+    <td colspan="5" nowrap class="InLineFooterTD">
+	  <a class="InLineNavigatorLink" href="{Link1_Src}">Add user account</a>&nbsp;&nbsp;&nbsp;
+      <!-- BEGIN Navigator Navigator -->
+      <!-- BEGIN First_On --><a class="InLineNavigatorLink" href="{First_URL}">First</a> <!-- END First_On -->
+      <!-- BEGIN First_Off -->First <!-- END First_Off -->
+      <!-- BEGIN Prev_On --><a class="InLineNavigatorLink" href="{Prev_URL}">Prev</a> <!-- END Prev_On -->
+      <!-- BEGIN Prev_Off -->Prev <!-- END Prev_Off -->&nbsp; 
+      <!-- BEGIN Pages -->
+      <!-- BEGIN Page_On --><a class="InLineNavigatorLink" href="{Page_URL}">{Page_Number}</a>&nbsp;<!-- END Page_On -->
+      <!-- BEGIN Page_Off -->{Page_Number}&nbsp;<!-- END Page_Off --><!-- END Pages -->of
+      {Total_Pages}&nbsp; 
+      <!-- BEGIN Next_On --><a class="InLineNavigatorLink" href="{Next_URL}">Next</a> <!-- END Next_On -->
+      <!-- BEGIN Next_Off -->Next <!-- END Next_Off -->
+      <!-- BEGIN Last_On --><a class="InLineNavigatorLink" href="{Last_URL}">Last</a> <!-- END Last_On -->
+      <!-- BEGIN Last_Off -->Last <!-- END Last_Off --><!-- END Navigator Navigator -->&nbsp; </td> 
+  </tr>
+</table>
+<!-- END Grid users -->{Footer}
+</body>
+</html>

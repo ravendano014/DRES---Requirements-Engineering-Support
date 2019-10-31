@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="req_summary" width="100%">
+	<fieldgroup name="Identification">
+		<field name="req_identifier" label="Identifier" control="textfield" width="50" binding="/requirement/@identifier" style="width:100%" input="req_identifier_value" required="true"/>
+		<field name="req_name" label="Name" control="textarea" width="50" height="3" binding="/requirement/@name" style="width:100%" required="true"/>
+		<field name="req_priority" label="Priority" control="combo" binding="/requirement/@priority" style="width:200px">
+			<choice name="high" value="high"/>
+			<choice name="medium" value="medium"/>
+			<choice name="low" value="low"/>
+		</field>
+		<field name="req_status" label="Status" control="combo" binding="/requirement/@status" style="width:200px">
+			<choice name="draft" value="draft"/>
+			<choice name="approved" value="approved"/>
+			<choice name="proposed" value="proposed"/>
+		</field>
+	</fieldgroup>
+
+	<fieldgroup name="Revision">
+		<field name="rev_version" label="Number" control="readonly" width="50" binding="/requirement/revision/@version"/>
+		<field name="rev_label" label="Label" control="textfield" width="50" binding="/requirement/revision/@label" style="width:100%"/>
+		<field name="rev_author" label="Author" control="readonly" width="50" binding="/requirement/revision/author"/>
+		<field name="rev_date" label="Date" control="readonly" width="50" binding="/requirement/revision/@date"/>
+		<field name="rev_comment" label="Comment" control="textarea" width="50" height="3" binding="/requirement/revision/comment" style="width:100%"/>
+	</fieldgroup>
+
+	<field name="req_description" layout="vertical" label="Description" control="textarea" binding="/requirement/description" width="100" height="10" style="width:100%" required="true"/>
+
+	<button name="summary_save" label="Save Summary"/>
+</form>

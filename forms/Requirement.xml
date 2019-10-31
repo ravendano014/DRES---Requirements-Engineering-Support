@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE form SYSTEM "dtd/form.dtd">
+<form name="requirement">
+	<field name="req_rid" label="Requirement ID" control="readonly" binding="/requirement/@id"/>
+	<field name="req_date" label="Date" control="readonly" binding="/requirement/@date"/>
+	<field name="req_name" label="Name" control="textfield" binding="/requirement/@name" width="50"/>
+	<field name="req_priority" label="Priority" control="combo" binding="/requirement/@priority">
+		<choice name="high" value="high"/>
+		<choice name="medium" value="medium"/>
+		<choice name="low" value="low"/>
+		<choice name="very low" value="very low"/>
+	</field>
+	<field name="req_desc" label="Description" control="textarea" binding="/requirement/description" width="50" height="5"/>
+	<field name="req_deleted" label="Deleted" control="checkbox" binding="/requirement/@deleted">
+		<choice name="on" value="1"/>
+		<choice name="off" value="0"/>
+	</field>
+</form>

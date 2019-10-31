@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="req_custom" width="100%" display="edit">
+	<field name="old_custom_name" control="hidden" binding="/custom-attribute/@name"/>
+	<field label="Name" name="custom_name" control="textfield" binding="/custom-attribute/@name" width="50" style="width:100%"/>
+	<field label="Value" name="custom_value" control="textfield" binding="/custom-attribute/@value" width="50" style="width:100%"/>
+	<button name="custom_save" label="Save Attribute"/>
+</form>

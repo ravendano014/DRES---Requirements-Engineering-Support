@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="req_relations" width="100%">
+	<field
+		name="req_relations"
+		control="listbox"
+		display="edit"
+		label="Relations"
+		layout="vertical"
+		context="/requirement/relations/relation"
+		binding="concat(@id,': ',@name,' [',@type,']')"
+		value="@name"
+		height="10"
+		style="width:100%"
+	/>
+	<field
+		name="req_relations"
+		control="grid"
+		label="Relations"
+		layout="vertical"
+		display="readonly"
+		context="/requirement/relations/relation"
+		binding="concat(@id,': ',@name,' (',@type,')')"
+		height="10"
+		style="width:100%"
+	>
+		<column name="Requirement" binding="@name">
+			<link page="main.php">
+				<output name="req_id" select="@id"/>
+			</link>
+		</column>
+		<column name="Type" binding="@type"/>
+		<column name="Description" binding="."/>
+	</field>
+	<button name="relation_edit" label="Edit Relation"/>
+	<button name="relation_delete" label="Delete Relation"/>
+</form>

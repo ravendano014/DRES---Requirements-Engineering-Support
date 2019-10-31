@@ -1,0 +1,78 @@
+.TabTable {
+	border-collapse:collapse;
+}
+
+.TabRow {
+}
+
+.TabContents {
+}
+
+.Tab {
+	border-top: 1px solid #A3BDD4;
+	border-left: 1px solid #A3BDD4;
+	border-right: 1px solid #A3BDD4;
+	background-color: #E8F0F6;
+}
+
+.ActiveTab {
+	border-top: 2px solid #A3BDD4;
+	border-bottom: 2px solid #A3BDD4;
+	border-left: 1px solid #A3BDD4;
+	border-right: 1px solid #A3BDD4;
+	background-color: #D4E1EC;
+	font-weight: bold;
+}
+
+.TabLink {
+	color: black;
+}
+
+.CheckoutButton {
+	border: 1px solid #000000; 
+	background-color : #D4E1EC; 
+	font-size : 13px; 
+	font-family : Verdana, Tahoma, Helvetica, Arial; 
+	font-weight : bold;
+	width: 200px;
+}
+
+.CommitButton {
+	color: white;
+	border: 1px solid #000000; 
+	background-color : green; 
+	font-size : 13px; 
+	font-family : Verdana, Tahoma, Helvetica, Arial; 
+	font-weight : bold;
+	width: 200px;
+}
+
+.UndoButton {
+	color: white;
+	border: 1px solid #000000; 
+	background-color : red; 
+	font-size : 13px; 
+	font-family : Verdana, Tahoma, Helvetica, Arial; 
+	font-weight : bold;
+	width: 200px;
+}
+
+.DisabledButton {
+	color: gray;
+	border: 1px solid darkgray; 
+	background-color : darkgray; 
+	font-size : 13px; 
+	font-family : Verdana, Tahoma, Helvetica, Arial; 
+	font-weight : bold;
+	width: 200px;
+}
+
+.StatusTable {
+	border: 1px solid #A3BDD4;
+	background-color: #E8F0F6;
+}
+
+.StatusCell {
+	padding:10px;
+	font-size: 10px;
+}

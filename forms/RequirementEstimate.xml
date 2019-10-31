@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="req_estimate" width="100%" display="edit">
+	<field name="old_estimate_name" control="hidden" binding="/estimate/@name"/>
+	<field label="Name" name="estimate_name" control="textfield" binding="/estimate/@name" width="50" style="width:100%"/>
+	<field label="Value" name="estimate_value" control="combo" binding="/estimate/@value" style="width:200px">
+		<choice value="low" name="low"/>
+		<choice value="medium" name="medium"/>
+		<choice value="high" name="high"/>
+	</field>
+	<button name="estimate_save" label="Save Estimate"/>
+</form>

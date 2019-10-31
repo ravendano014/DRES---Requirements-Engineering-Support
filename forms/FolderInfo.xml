@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="folder_info" width="100%" title="Folder Information" style="margin-bottom:5px">
+	<field name="folder_parent" control="hidden" binding="@parent"/>
+	<field name="folder_id" control="hidden" binding="@id"/>
+	<field label="Path" name="folder_path" control="label" binding="@id"/>
+	<field label="Name" name="folder_name" control="textfield" binding="@name" width="50" style="width:100%"/>
+	<field label="Prefix" name="folder_prefix" control="textfield" binding="@prefix" width="50" style="width:100%"/>
+	<button name="folder_edit" label="Edit Folder" display="readonly"/>
+	<button name="folder_save" label="Save Folder" display="edit"/>
+</form>

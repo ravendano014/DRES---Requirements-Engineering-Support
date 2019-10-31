@@ -1,0 +1,37 @@
+<!-- NOT UP TO DATE! -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XML Spy v4.3 U (http://www.xmlspy.com) by KrzysioK (PUT) -->
+<!ELEMENT form (input*, field+)>
+<!ATTLIST form
+	name CDATA #REQUIRED
+	updatetitle CDATA #REQUIRED
+	inserttitle CDATA #REQUIRED
+	updatebutton CDATA #REQUIRED
+	insertbutton CDATA #REQUIRED
+>
+<!ELEMENT input EMPTY>
+<!ATTLIST input
+	parameter CDATA #REQUIRED
+	source (GET | POST | COOKIE) #REQUIRED
+	field CDATA #REQUIRED
+>
+<!ELEMENT field (choice*)>
+<!ATTLIST field
+	name CDATA #REQUIRED
+	label CDATA #REQUIRED
+	comment CDATA #IMPLIED
+	help CDATA #IMPLIED
+	pattern CDATA #IMPLIED
+	maxlength CDATA #IMPLIED
+	control (textfield | textarea | combo | checkbox | radio | hidden | readonly) #REQUIRED
+	width CDATA #IMPLIED
+	height CDATA #IMPLIED
+	renderer CDATA #IMPLIED
+	default CDATA #IMPLIED
+	binding CDATA #REQUIRED
+>
+<!ELEMENT choice EMPTY>
+<!ATTLIST choice
+	name CDATA #REQUIRED
+	value CDATA #REQUIRED
+>

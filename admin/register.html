@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>DRES Registration</title>
+<link rel="stylesheet" type="text/css" href="Themes/InLine/Style.css">
+</head>
+<body bgcolor="#F4F8FB" link="#000000" alink="#000000" vlink="#000000" text="#000000" class="InLinePageBODY" topmargin="0" marginwidth="0" leftmargin="0" rightmargin="0" marginheight="0">
+{Header2}
+<!-- BEGIN Record users -->
+<div align="center">
+  <form method="post" action="{Action}" name="{HTMLFormName}">
+    <font class="InLineFormHeaderFont">Register&nbsp;for new user account&nbsp; </font> <br>
+	this account data will have to be accepted by the administrator 
+    <table cellpadding="3" cellspacing="0" class="InLineFormTABLE">
+      <!-- BEGIN Error -->
+      <tr>
+        <td colspan="2" class="InLineErrorDataTD">{Error}</td> 
+      </tr>
+      <!-- END Error -->
+      <tr>
+        <td class="InLineFieldCaptionTD">Name&nbsp;</td> 
+        <td class="InLineDataTD"><input name="{user_name_Name}" value="{user_name}" maxlength="100" size="50" class="InLineInput">&nbsp;</td> 
+      </tr>
+ 
+      <tr>
+        <td class="InLineFieldCaptionTD">Login&nbsp;</td> 
+        <td class="InLineDataTD"><input name="{user_login_Name}" value="{user_login}" maxlength="50" size="50" class="InLineInput">&nbsp;</td> 
+      </tr>
+ 
+      <tr>
+        <td class="InLineFieldCaptionTD">Password&nbsp;</td> 
+        <td class="InLineDataTD"><input class="InLineInput" type="password" maxlength="50" size="50" value="{user_password}" name="{user_password_Name}">&nbsp;</td> 
+      </tr>
+ 
+      <tr>
+        <td class="InLineFieldCaptionTD">Email&nbsp;</td> 
+        <td class="InLineDataTD"><input name="{user_email_Name}" value="{user_email}" maxlength="200" size="50" class="InLineInput">&nbsp;</td> 
+      </tr>
+ 
+      <tr>
+        <td colspan="2" align="right" nowrap class="InLineFooterTD">
+          <!-- BEGIN Button Button_Insert --><input name="{Button_Name}" type="submit" value="Register" class="InLineButton"><!-- END Button Button_Insert -->&nbsp; </td> 
+      </tr>
+ 
+    </table>
+  </form>
+</div>
+<!-- END Record users -->{Footer}
+</body>
+</html>

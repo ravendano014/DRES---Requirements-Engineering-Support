@@ -1,0 +1,74 @@
+<html>
+<head>
+<title>DRES Administration</title>
+<link rel="stylesheet" type="text/css" href="Themes/InLine/Style.css">
+</head>
+<body bgcolor="#F4F8FB" link="#000000" alink="#000000" vlink="#000000" text="#000000" class="InLinePageBODY" topmargin="0" marginwidth="0" leftmargin="0" rightmargin="0" marginheight="0">
+{Header}
+<table>
+  <tr>
+    <td>
+      <!-- BEGIN Grid projects --><font class="InLineFormHeaderFont">Projects </font> 
+      <table class="InLineFormTABLE" cellspacing="0" cellpadding="3" width="100%">
+        <tr>
+          <td class="InLineColumnTD" nowrap>
+            <!-- BEGIN Sorter Sorter_project_name --><a class="InLineSorterLink" href="{Sort_URL}">Name</a> 
+            <!-- BEGIN Asc_On --><img src="Themes/InLine/AscOn.gif" border="0"><!-- END Asc_On -->
+            <!-- BEGIN Desc_On --><img src="Themes/InLine/DescOn.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_project_name -->&nbsp;</td> 
+        </tr>
+        <!-- BEGIN Row -->
+        <tr>
+          <td class="InLineDataTD"><a class="InLineDataLink" href="{project_name_Src}">{project_name}</a>&nbsp;</td> 
+        </tr>
+        <!-- END Row -->
+        <!-- BEGIN NoRecords -->
+        <tr>
+          <td class="InLineDataTD">No projects&nbsp;</td> 
+        </tr>
+        <!-- END NoRecords -->
+        <tr>
+          <td class="InLineFooterTD" nowrap><a class="InLineNavigatorLink" href="{projects_Insert_Src}">Add
+            New</a>&nbsp;&nbsp; </td> 
+        </tr>
+ 
+      </table>
+ <!-- END Grid projects --></td> 
+  </tr>
+ 
+  <tr>
+    <td>
+      <!-- BEGIN Record projects1 -->
+      <form name="{HTMLFormName}" action="{Action}" method="post">
+        <font class="InLineFormHeaderFont">Project details </font> 
+        <table class="InLineFormTABLE" cellspacing="0" cellpadding="3" width="100%">
+          <!-- BEGIN Error -->
+          <tr>
+            <td class="InLineErrorDataTD" colspan="2">{Error}</td> 
+          </tr>
+          <!-- END Error -->
+          <tr>
+            <td class="InLineFieldCaptionTD">Name&nbsp;</td> 
+            <td class="InLineDataTD"><input class="InLineInput" maxlength="100" size="50" value="{project_name}" name="{project_name_Name}">&nbsp;</td> 
+          </tr>
+ 
+          <tr>
+            <td class="InLineFieldCaptionTD">Root folder</td> 
+            <td class="InLineDataTD"><input class="InLineInput" value="{folder_prefix}" name="{folder_prefix_Name}" size="4">&nbsp;: <input class="InLineInput" value="{folder_name}" name="{folder_name_Name}" size="40"></td> 
+          </tr>
+ 
+          <tr>
+            <td class="InLineFooterTD" nowrap align="right" colspan="2">
+              <!-- BEGIN Button Button_Insert --><input class="InLineButton" type="submit" value="Add" name="{Button_Name}"><!-- END Button Button_Insert -->
+              <!-- BEGIN Button Button_Update --><input class="InLineButton" type="submit" value="Submit" name="{Button_Name}"><!-- END Button Button_Update -->
+              <!-- BEGIN Button Button_Delete --><input class="InLineButton" type="submit" value="Delete" name="{Button_Name}"><!-- END Button Button_Delete -->&nbsp; </td> 
+          </tr>
+ 
+        </table>
+ 
+      </form>
+ <!-- END Record projects1 --></td> 
+  </tr>
+</table>
+{Footer} 
+</body>
+</html>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="req_estimates" width="100%">
+	<field 
+		label="Custom Estimates"
+		name="req_estimates"
+		display="edit"
+		control="listbox"
+		context="/requirement/estimates/estimate"
+		optvalue="@name"
+		optdisplay="concat(@name,' = ',@value)"
+		binding="/requirement/estimates/estimate"
+		value="@name"
+		height="10"
+		style="width:100%"
+	/>
+	<field 
+		label="Custom Estimates"
+		name="req_estimates"
+		layout="vertical"
+		display="readonly"
+		control="grid"
+		context="/requirement/estimates/estimate"
+		style="width:100%"
+	>
+		<column name="Name" binding="@name" width="50%" align="center"/>
+		<column name="Value" binding="@value" width="50%" align="center"/>
+	</field>
+	<button name="estimates_edit" label="Edit Estimate"/>
+	<button name="estimates_delete" label="Delete Estimate"/>
+</form>

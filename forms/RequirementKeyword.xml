@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="req_keyword" width="100%" display="edit">
+	<field name="req_keyword" label="Keyword" control="textfield" binding="keyword" width="50" style="width:100%"/>
+	<button name="keyword_add" label="Add Keyword"/>
+</form>

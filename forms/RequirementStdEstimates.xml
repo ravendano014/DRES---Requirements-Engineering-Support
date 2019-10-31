@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="req_stdestimates" width="100%">
+	<fieldgroup name="Standard Estimates">
+		<field label="Importance" name="req_importance" control="combo" binding="/requirement/estimates/@importance" style="width:200px">
+			<choice value="low" name="low"/>
+			<choice value="medium" name="medium"/>
+			<choice value="high" name="high"/>
+		</field>
+		<field label="Cost" name="req_cost" control="combo" binding="/requirement/estimates/@cost" style="width:200px">
+			<choice value="low" name="low"/>
+			<choice value="medium" name="medium"/>
+			<choice value="high" name="high"/>
+		</field>
+		<field label="Stability" name="req_stability" control="combo" binding="/requirement/estimates/@stability" style="width:200px">
+			<choice value="low" name="low"/>
+			<choice value="medium" name="medium"/>
+			<choice value="high" name="high"/>
+		</field>
+		<field label="Risk" name="req_risk" control="combo" binding="/requirement/estimates/@risk" style="width:200px">
+			<choice value="low" name="low"/>
+			<choice value="medium" name="medium"/>
+			<choice value="high" name="high"/>
+		</field>
+		<field label="Verifiability" name="req_verifiability" control="combo" binding="/requirement/estimates/@verifiability" style="width:200px">
+			<choice value="low" name="low"/>
+			<choice value="medium" name="medium"/>
+			<choice value="high" name="high"/>
+		</field>
+	</fieldgroup>
+	<button name="estimates_save" label="Save Estimates"/>
+</form>

@@ -1,0 +1,24 @@
+<!-- NOT UP TO DATE! -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT grid (column+, insert?)>
+<!ATTLIST grid
+	name CDATA #REQUIRED
+	title CDATA #REQUIRED
+	rowsperpage CDATA #IMPLIED
+>
+<!ELEMENT column>
+<!ATTLIST column
+	name CDATA #REQUIRED
+	title CDATA #REQUIRED
+	comment CDATA #IMPLIED
+	href CDATA #IMPLIED
+	renderer CDATA #IMPLIED
+	default CDATA #IMPLIED
+	binding CDATA #REQUIRED
+>
+<!ELEMENT insert>
+<!ATTLIST insert
+	title CDATA #REQUIRED
+	href CDATA #REQUIRED
+>
+

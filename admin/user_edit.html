@@ -1,0 +1,97 @@
+<html>
+<head>
+<title>DRES Administration</title>
+<link rel="stylesheet" type="text/css" href="Themes/InLine/Style.css">
+</head>
+<body bgcolor="#F4F8FB" link="#000000" alink="#000000" vlink="#000000" text="#000000" class="InLinePageBODY" topmargin="0" marginwidth="0" leftmargin="0" rightmargin="0" marginheight="0">
+{Header}
+<table border="0">
+  <tr>
+    <td>
+      <!-- BEGIN Record user_details -->
+      <form name="{HTMLFormName}" action="{Action}" method="post">
+        <font class="InLineFormHeaderFont">User details </font> 
+        <table class="InLineFormTABLE" cellspacing="0" cellpadding="3" width="100%">
+          <!-- BEGIN Error -->
+          <tr>
+            <td class="InLineErrorDataTD" colspan="2">{Error}</td> 
+          </tr>
+          <!-- END Error -->
+          <tr>
+            <td class="InLineFieldCaptionTD">Name&nbsp;</td> 
+            <td class="InLineDataTD"><input class="InLineInput" maxlength="100" size="50" value="{user_name}" name="{user_name_Name}">&nbsp;</td> 
+          </tr>
+ 
+          <tr>
+            <td class="InLineFieldCaptionTD">Login&nbsp;</td> 
+            <td class="InLineDataTD"><input class="InLineInput" maxlength="50" size="50" value="{user_login}" name="{user_login_Name}">&nbsp;</td> 
+          </tr>
+ 
+          <tr>
+            <td class="InLineFieldCaptionTD">Password&nbsp;</td> 
+            <td class="InLineDataTD"><input class="InLineInput" maxlength="50" size="50" value="{user_password}" name="{user_password_Name}" type="password">&nbsp;</td> 
+          </tr>
+ 
+          <tr>
+            <td class="InLineFieldCaptionTD">Level&nbsp;</td> 
+            <td class="InLineDataTD">
+              <select class="InLineSelect" name="{user_level_Name}">
+                {user_level_Options} 
+              </select>
+ &nbsp;</td> 
+          </tr>
+ 
+          <tr>
+            <td class="InLineFieldCaptionTD">Date registered&nbsp;</td> 
+            <td class="InLineDataTD">{user_date_registered}&nbsp;</td> 
+          </tr>
+ 
+          <tr>
+            <td class="InLineFieldCaptionTD">Date logged&nbsp;</td> 
+            <td class="InLineDataTD">{user_date_logged}&nbsp;</td> 
+          </tr>
+ 
+          <tr>
+            <td class="InLineFooterTD" nowrap align="right" colspan="2">
+              <!-- BEGIN Button Button_Insert --><input class="InLineButton" type="submit" value="Add" name="{Button_Name}"><!-- END Button Button_Insert -->
+              <!-- BEGIN Button Button_Update --><input class="InLineButton" type="submit" value="Submit" name="{Button_Name}"><!-- END Button Button_Update -->
+              <!-- BEGIN Button Button_Delete --><input class="InLineButton" type="submit" value="Delete" name="{Button_Name}"><!-- END Button Button_Delete -->&nbsp; </td> 
+          </tr>
+ 
+        </table>
+      </form>
+      <!-- END Record user_details --></td>
+  </tr>
+ 
+  <tr>
+    <td>
+<!-- BEGIN Record user_projects -->
+<form name="{HTMLFormName}" action="{Action}" method="post">
+  <font class="InLineFormHeaderFont">Accessible projects</font>&nbsp; 
+  <table class="InLineFormTABLE" cellspacing="0" cellpadding="3" width="100%">
+    <!-- BEGIN Error -->
+    <tr>
+      <td class="InLineErrorDataTD" colspan="2">{Error}</td> 
+    </tr>
+    <!-- END Error -->
+    <tr>
+      <td class="InLineFieldCaptionTD">Select projects&nbsp;</td> 
+      <td class="InLineDataTD">
+        <!-- BEGIN CheckBoxList projects --><input type="checkbox" name="{projects_Name}" value="{Value}" {Check}>{Description}<br>
+        <!-- END CheckBoxList projects --><input type="hidden" value="{selected}" name="{selected_Name}"></td> 
+    </tr>
+ 
+    <tr>
+      <td class="InLineFooterTD" nowrap align="right" colspan="2">
+        <!-- BEGIN Button Button_Update --><input class="InLineButton" type="submit" value="Update" name="{Button_Name}"><!-- END Button Button_Update --></td> 
+    </tr>
+ 
+  </table>
+</form>
+<!-- END Record user_projects -->
+    </td>
+  </tr>
+</table>
+{Footer} 
+</body>
+</html>

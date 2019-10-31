@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="req_definition" width="100%">
+	<field name="req_input" layout="vertical" label="Input" control="textarea" binding="/requirement/definition/input" width="100" height="5" style="width:100%"/>
+	<field name="req_condition" layout="vertical" label="Condition" control="textarea" binding="/requirement/definition/condition" width="100" height="5" style="width:100%"/>
+	<field name="req_output" layout="vertical" label="Output" control="textarea" binding="/requirement/definition/output" width="100" height="5" style="width:100%"/>
+	<field name="req_processing" layout="vertical" label="Processing" control="textarea" binding="/requirement/definition/processing" width="100" height="5" style="width:100%"/>
+	<button name="definition_save" label="Save Definition"/>
+</form>

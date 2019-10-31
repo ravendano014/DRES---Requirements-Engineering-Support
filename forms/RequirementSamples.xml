@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="req_samples" width="100%">
+	<field label="Samples" display="edit" name="req_samples" layout="vertical" control="listbox" context="/requirement/definition/samples/sample" optvalue="@name" optdisplay="@name" binding="/requirement/definition/samples/sample/@name" height="5" style="width:100%"/>
+	<field label="Samples" display="readonly" name="req_samples" layout="vertical" control="grid" type="vertical" context="/requirement/definition/samples/sample" style="width:100%" separator="true">
+		<column name="Name" binding="@name"/>
+		<column name="Sample" binding="."/>
+	</field>
+	<button name="sample_edit" label="Edit Sample"/>
+	<button name="sample_delete" label="Delete Sample"/>
+</form>

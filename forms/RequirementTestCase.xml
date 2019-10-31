@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="req_testcase" width="100%" display="edit">
+	<field name="old_testcase_name" control="hidden" binding="/test-case/@name"/>
+	<field label="Name" name="testcase_name" control="textfield" binding="/test-case/@name" width="50" style="width:100%"/>
+	<field label="Description" name="testcase_content" control="textarea" binding="/test-case" width="50" height="5" style="width:100%"/>
+	<button name="testcase_save" label="Save Test Case"/>
+</form>

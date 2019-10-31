@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="req_scenario" width="100%" display="edit">
+	<field name="old_scenario_name" control="hidden" binding="/scenario/@name"/>
+	<field label="Name" name="scenario_name" control="textfield" binding="/scenario/@name" width="50" style="width:100%"/>
+	<field label="Description" name="scenario_content" control="textarea" binding="/scenario" width="50" height="5" style="width:100%"/>
+	<button name="scenario_save" label="Save Scenario"/>
+</form>

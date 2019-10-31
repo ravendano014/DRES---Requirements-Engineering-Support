@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="req_testcases" width="100%">
+	<field
+		name="req_testcases"
+		layout="vertical"
+		label="Test cases"
+		display="edit"
+		control="listbox"
+		context="/requirement/test-cases/test-case"
+		optvalue="@name"
+		optdisplay="@name"
+		binding="/requirement/test-cases/test-case"
+		height="5"
+		style="width:100%"
+	/>
+	<field
+		name="req_testcases"
+		display="readonly"
+		layout="vertical"
+		label="Test cases"
+		control="grid"
+		type="vertical"
+		context="/requirement/test-cases/test-case"
+		style="width:100%"
+		separator="true"
+	>
+		<column name="Name" binding="@name"/>
+		<column name="Description" binding="."/>
+	</field>
+	<button name="testcase_edit" label="Edit Test Case"/>
+	<button name="testcase_delete" label="Delete Test Case"/>
+</form>

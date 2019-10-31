@@ -1,0 +1,130 @@
+.GridTable {
+	margin-bottom: 5px;
+	border: 1px solid #A3BDD4;
+	border-collapse:collapse;
+}
+
+.GridTitle {
+	border : solid 1px #000000;
+	background-color : #A3BDD4; 
+	height : 1px;
+	text-align : center;
+	font-family : Verdana, Arial, sans-serif;
+	font-size : 15px;
+	font-weight : bold;
+	color : #355471;
+}
+
+.GridHeader {
+	border-left: 1px solid #A3BDD4;
+	border-right: 1px solid #A3BDD4;
+	border-bottom: 1px solid #A3BDD4;
+	color : #000000;
+	background-color : #D4E1EC;
+	font-size : 13px; 
+	font-weight : bold;
+	text-align:center;
+}
+
+.GridRow {
+	background-color : #E8F0F6; 
+	color : #51718D; 
+	font-size : 13px;
+}
+
+.GridRowAlt {
+	background-color : #FFFFFF;
+	color : #51718D; 
+	font-size : 13px;
+}
+
+.GridRowSelected {
+	background-color : #D4E1EC;
+	color: black;
+}
+
+.GridCell {
+}
+
+.GridCellAlt {
+}
+
+.GridCellSelected {
+}
+
+.GridNoRows {
+}
+
+.GridFooter {
+	background-color : #7BAE5A; 
+	padding: 7px;
+	color: #E8F0F6;
+	font-weight:bold;
+}
+
+.OutLink {
+}
+
+.OutLink:visited {
+}
+
+.OutLink:hover {
+}
+
+.SorterLink {
+	color: #006400;
+	text-decoration: none;
+}
+
+.SorterLink:visited {
+	text-decoration: none;
+}
+
+.SorterLink:hover {
+	text-decoration: underline;
+}
+
+.NavLink {
+	font-weight: bold;
+	text-decoration: none;
+	color: red;
+}
+
+.NavLink:visited {
+	text-decoration: none;
+}
+
+.NavLink:hover {
+	text-decoration: underline;
+}
+
+.InsertLink {
+	border-bottom : 1px solid #000000; 
+	border-left : 1px solid #000000; 
+	border-right : 1px solid #000000; 
+	border-top : 1px solid #000000; 
+	background-color : #E8F0F6; 
+	padding: 3px;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-size : 13px; 
+	font-family : Verdana, Tahoma, Helvetica, Arial; 
+	font-weight : bold;
+	text-decoration: none;
+	margin-right:20px;
+	color: black;
+}
+
+.InsertLink:visited {
+	text-decoration: none;
+}
+
+.InsertLink:hover {
+	text-decoration: none;
+}
+
+.HighlightedRow {
+	background-color : #D4E1EC;
+	color : #51718D; 
+	font-size : 13px;
+}

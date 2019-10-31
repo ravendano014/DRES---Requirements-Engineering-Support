@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="report" width="100%">
+	<field name="report_name" label="Name" control="textfield" width="50" binding="/report/@name" style="width:100%" required="true"/>
+
+	<field name="report_date" label="Date" control="readonly" width="50" binding="/report/@date"/>
+
+	<fieldgroup name="Report filter">
+
+		<field label="Folder" name="folder" control="listbox" context="document('arg:/folders')//folder" optvalue="@id" optdisplay="@name" binding="/report/folder/@id" style="width:100%" height="1"/>
+
+		<field name="recursive" label="Recursive" control="checkbox" binding="/report/folder/@recursive">
+			<choice name="on" value="on"/>
+			<choice name="off" value=""/>
+		</field>
+
+		<field name="priority" label="Priority" control="combo" binding="/report/priority/@value" style="width:200px">
+			<choice name="any" value=""/>
+			<choice name="high" value="high"/>
+			<choice name="medium" value="medium"/>
+			<choice name="low" value="low"/>
+		</field>
+
+		<field name="status" label="Status" control="combo" binding="/report/status/@value" style="width:200px">
+			<choice name="any" value=""/>
+			<choice name="draft" value="draft"/>
+			<choice name="approved" value="approved"/>
+			<choice name="proposed" value="proposed"/>
+		</field>
+
+		<field name="keywords" label="Keywords" control="textfield" width="50" binding="/report/keywords" style="width:100%" required="false" value="x"/>
+
+		<field name="text" label="Text" control="textfield" width="50" binding="/report/text" style="width:100%" required="false"/>
+
+		<field name="versions" label="Scope" control="radio" binding="/report/versions/@scope" required="true">
+			<choice name="most recent versions only" value="recent"/>
+			<choice name="all versions" value="all"/>
+		</field>
+	</fieldgroup>
+
+	<button name="report_save" label="Save Report"/>
+</form>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="req_customs" width="100%">
+	<field
+		label="Custom Attributes"
+		name="req_customs"
+		control="listbox"
+		layout="vertical"
+		display="edit"
+		context="/requirement/custom-attributes/custom-attribute"
+		optvalue="@name"
+		optdisplay="concat(@name,' = ',@value)"
+		binding="/requirement/custom-attributes/custom-attribute"
+		value="@name"
+		height="10"
+		style="width:100%"
+	/>
+	<field
+		label="Custom Attributes"
+		name="req_customs"
+		layout="vertical"
+		control="grid"
+		display="readonly"
+		context="/requirement/custom-attributes/custom-attribute"
+		style="width:100%"
+	>
+		<column name="Name" binding="@name" width="50%" align="center"/>
+		<column name="Value" binding="@value" width="50%" align="center"/>
+	</field>
+	<button name="custom_edit" label="Edit Attribute"/>
+	<button name="custom_delete" label="Delete Attribute"/>
+</form>

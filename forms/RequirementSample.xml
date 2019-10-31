@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="req_sample" width="100%" display="edit">
+	<field name="old_sample_name" control="hidden" binding="/sample/@name"/>
+	<field label="Name" name="sample_name" control="textfield" binding="/sample/@name" width="50" style="width:100%"/>
+	<field label="Description" name="sample_content" control="textarea" binding="/sample" width="50" height="5" style="width:100%"/>
+	<button name="sample_save" label="Save Sample"/>
+</form>

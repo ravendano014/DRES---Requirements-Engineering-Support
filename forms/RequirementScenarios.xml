@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="req_scenarios" width="100%">
+	<field
+		name="req_scenarios"
+		display="edit"
+		layout="vertical"
+		label="Scenarios"
+		control="listbox"
+		context="/requirement/scenarios/scenario"
+		optvalue="@name"
+		optdisplay="@name"
+		binding="/requirement/scenarios/scenario/@name"
+		height="5"
+		style="width:100%"
+	/>
+	<field
+		name="req_scenarios"
+		display="readonly"
+		layout="vertical"
+		label="Scenarios"
+		control="grid"
+		type="vertical"
+		context="/requirement/scenarios/scenario"
+		style="width:100%"
+		separator="true"
+	>
+		<column name="Name" binding="@name"/>
+		<column name="Description" binding="."/>
+	</field>
+	<button name="scenario_edit" label="Edit Scenario"/>
+	<button name="scenario_delete" label="Delete Scenario"/>
+</form>

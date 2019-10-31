@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>DRES Administration</title>
+<link rel="stylesheet" type="text/css" href="Themes/InLine/Style.css">
+</head>
+<body bgcolor="#F4F8FB" link="#000000" alink="#000000" vlink="#000000" text="#000000" class="InLinePageBODY" topmargin="0" marginwidth="0" leftmargin="0" rightmargin="0" marginheight="0">
+{Header}
+<!-- BEGIN Grid users --><font class="InLineFormHeaderFont">User accounts
+pending activation&nbsp; </font>
+<table class="InLineFormTABLE" cellspacing="0" cellpadding="3">
+  <tr>
+    <td class="InLineColumnTD" nowrap>
+      <!-- BEGIN Sorter Sorter_user_name --><a class="InLineSorterLink" href="{Sort_URL}">Name</a> 
+      <!-- BEGIN Asc_On --><img src="Themes/InLine/AscOn.gif" border="0"><!-- END Asc_On -->
+      <!-- BEGIN Desc_On --><img src="Themes/InLine/DescOn.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_user_name -->&nbsp;</td> 
+    <td class="InLineColumnTD" nowrap>
+      <!-- BEGIN Sorter Sorter_user_date_registered --><a class="InLineSorterLink" href="{Sort_URL}">Date_registered</a> 
+      <!-- BEGIN Asc_On --><img src="Themes/InLine/AscOn.gif" border="0"><!-- END Asc_On -->
+      <!-- BEGIN Desc_On --><img src="Themes/InLine/DescOn.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_user_date_registered -->&nbsp;</td> 
+  </tr>
+  <!-- BEGIN Row -->
+  <tr>
+    <td class="InLineDataTD"><a class="InLineDataLink" href="{user_name_Src}">{user_name}</a>&nbsp;</td> 
+    <td class="InLineDataTD">{user_date_registered}&nbsp;</td> 
+  </tr>
+  <!-- END Row -->
+  <!-- BEGIN AltRow -->
+  <tr>
+    <td class="InLineAltDataTD"><a class="InLineDataLink" href="{Alt_user_name_Src}">{Alt_user_name}</a>&nbsp;</td> 
+    <td class="InLineAltDataTD">{Alt_user_date_registered}&nbsp;</td> 
+  </tr>
+  <!-- END AltRow -->
+  <!-- BEGIN NoRecords -->
+  <tr>
+    <td class="InLineAltDataTD" colspan="2">No accounts pending activation&nbsp;</td> 
+  </tr>
+  <!-- END NoRecords -->
+</table>
+<!-- END Grid users -->{Footer} 
+</body>
+</html>

@@ -1,0 +1,146 @@
+.FormTable {
+	border: 1px solid #A3BDD4;
+	border-collapse:collapse;
+}
+
+.FormTitle {
+	border : solid 1px #000000;
+	background-color : #A3BDD4; 
+	height : 1px;
+	text-align : center;
+	font-family : Verdana, Arial, sans-serif;
+	font-size : 15px;
+	font-weight : bold;
+	color : #355471;
+}
+
+.FormFooter {
+	border : solid 1px #000000;
+	background-color : #7BAE5A; 
+	color : #000000; 
+	font-size : 13px;
+	text-align: right;
+	padding: 3px;
+}
+
+.FormButton {
+	border: 1px solid #000000; 
+	background-color : #E8F0F6; 
+	font-size : 13px; 
+	font-family : Verdana, Tahoma, Helvetica, Arial; 
+	font-weight : bold;
+}
+
+.FormControl {
+	border-bottom : 1px solid #000000; 
+	border-left : 1px solid #000000; 
+	border-right : 1px solid #000000; 
+	border-top : 1px solid #000000; 
+	background-color : #FFFFFF; 
+	font-size : 13px;
+	font-family : Verdana, Tahoma, Helvetica, Arial;
+}
+
+.FormControlDirty {
+	background-color : yellow;
+}
+
+.FormLabel {
+	border : solid 1px #A3BDD4;
+	background-color : #D4E1EC;
+	color : #000000;
+	font-size : 13px;
+	width: 100px;
+}
+
+.FormData {
+	border : solid 1px #e0e0e0;
+	background-color : #E8F0F6;
+	color : #51718D;
+	font-size : 13px;
+	width: 100%;
+}
+
+.FormGroupTable {
+	border : solid 1px #A3BDD4;
+	border-collapse:collapse;
+	margin-bottom: 3px;
+	width: 100%
+}
+
+.FormGroupHeader {
+	background-color : #A3BDD4; height : 1px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.FormGridTable {
+	border: 1px solid #A3BDD4;
+	border-collapse:collapse;
+}
+
+.FormGridTitle {
+	border : solid 1px #000000;
+	background-color : #A3BDD4; 
+	height : 1px;
+	text-align : center;
+	font-family : Verdana, Arial, sans-serif;
+	font-size : 15px;
+	font-weight : bold;
+	color : black;
+}
+
+.FormGridHeader {
+	border-left: 1px solid #A3BDD4;
+	border-right: 1px solid #A3BDD4;
+	border-bottom: 1px solid #A3BDD4;
+	color : #000000;
+	background-color : #D4E1EC;
+	font-size : 13px; 
+	font-weight : bold;
+	text-align:center;
+}
+
+.FormGridLabel {
+	border : solid 1px #A3BDD4;
+	width: 100px;
+	background-color : #D4E1EC;
+	color : #000000;
+	font-size : 13px;
+}
+
+.FormGridRow {
+	background-color : #E8F0F6; 
+	color : #51718D; 
+	font-size : 13px;
+}
+
+.FormGridRowAlt {
+	background-color : #FFFFFF;
+	color : #51718D; 
+	font-size : 13px;
+}
+
+.FormGridCell {
+}
+
+.FormGridCellAlt {
+}
+
+.FormGridSeparator {
+	background-color : black;
+	height: 1px
+}
+
+.FormOutLink {
+	text-decoration: none;
+	color: blue;
+}
+
+.FormOutLink:visited {
+	text-decoration: none;
+}
+
+.FormOutLink:hover {
+	text-decoration: underline;
+}

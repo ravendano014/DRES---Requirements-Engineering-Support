@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="req_relation" width="100%" display="edit">
+	<field label="Requirement" name="relation_requirement" control="listbox" context="/relation" binding="@id" height="10" style="width:100%"/>
+	<field label="Type" name="relation_type" control="combo" binding="/relation/@type" style="width:200px"/>
+	<field label="Description" name="relation_description" control="textarea" binding="/relation" height="3" style="width:100%"/>
+	<button name="relation_save" label="Save Relation"/>
+</form>

@@ -1,0 +1,9 @@
+.StatusTable {
+	border: 1px solid #A3BDD4;
+	background-color: #E8F0F6;
+}
+
+.StatusCell {
+	padding:10px;
+	font-size: 10px;
+}
